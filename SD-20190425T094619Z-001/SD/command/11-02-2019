@@ -1,0 +1,132 @@
+student@T41:~$ pwd
+/home/student
+student@T41:~$ mkdir ajce
+student@T41:~$ pwd
+/home/student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cat mca
+cat: mca: No such file or directory
+student@T41:~/ajce$ mkdir mca
+student@T41:~/ajce$ mkdir bca
+student@T41:~/ajce$ cd mca
+student@T41:~/ajce/mca$ touch sample.txt
+student@T41:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T41:~/ajce/mca$ ls mca
+ls: cannot access 'mca': No such file or directory
+student@T41:~/ajce/mca$ cd ..
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ ls mca
+sample.txt
+student@T41:~/ajce$ cd bca
+student@T41:~/ajce/bca$ touch first.txt
+student@T41:~/ajce/bca$ cd ..
+student@T41:~/ajce$ ls bca
+first.txt
+student@T41:~/ajce$ cat first.txt
+cat: first.txt: No such file or directory
+student@T41:~/ajce$ cd..
+cd..: command not found
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cd bca
+student@T41:~/ajce/bca$ cat first.txt
+student@T41:~/ajce/bca$ cd..
+cd..: command not found
+student@T41:~/ajce/bca$ cat > first.txt
+bachelor of computer application
+^C
+student@T41:~/ajce/bca$ touch second.txt
+student@T41:~/ajce/bca$ cat > second.txt
+BACHELOR OF COMPUTER APPLICATION
+^C
+student@T41:~/ajce/bca$ PWD
+PWD: command not found
+student@T41:~/ajce/bca$ pwd
+/home/student/ajce/bca
+student@T41:~/ajce/bca$ cp first.txt second.txt
+student@T41:~/ajce/bca$ cat second.txt
+bachelor of computer application
+student@T41:~/ajce/bca$ pwd
+/home/student/ajce/bca
+student@T41:~/ajce/bca$ cd ..
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ mkdir bcom
+student@T41:~/ajce$ cd bocm
+bash: cd: bocm: No such file or directory
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cd bcom
+student@T41:~/ajce/bcom$ cat > aathira.txt
+aathira ajith 
+mavelikara
+^C
+student@T41:~/ajce/bcom$ pwd
+/home/student/ajce/bcom
+student@T41:~/ajce/bcom$ mkdir giss
+student@T41:~/ajce/bcom$ cd ..
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cd bcom
+student@T41:~/ajce/bcom$ ls bcom
+ls: cannot access 'bcom': No such file or directory
+student@T41:~/ajce/bcom$ cd ..
+student@T41:~/ajce$ ls bcom
+aathira.txt  giss
+student@T41:~/ajce$ cd > giss.txt
+student@T41:~$ pwd
+/home/student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ cd bcom
+student@T41:~/ajce/bcom$ cat > giss.txt
+giss mary varghese 
+palackal house 
+alappy
+^C
+student@T41:~/ajce/bcom$ 
+student@T41:~/ajce/bcom$ cd ..
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ ls bcom
+aathira.txt  giss.txt
+student@T41:~/ajce$ cp -b aathira.txt giss.txt
+cp: cannot stat 'aathira.txt': No such file or directory
+student@T41:~/ajce$ cd bcom
+student@T41:~/ajce/bcom$ cp -b aathira.txt giss.txt
+student@T41:~/ajce/bcom$ ls 
+aathira.txt  giss.txt  giss.txt~
+student@T41:~/ajce/bcom$ cat giss.txt
+aathira ajith 
+mavelikara
+student@T41:~/ajce/bcom$ cat giss.txt~
+giss mary varghese 
+palackal house 
+alappy
+student@T41:~/ajce/bcom$ mkdir tt
+student@T41:~/ajce/bcom$ mkdir tax
+student@T41:~/ajce/bcom$ cd tt
+student@T41:~/ajce/bcom/tt$ cd ..
+student@T41:~/ajce/bcom$ cp aathira.txt giss.txt tax
+student@T41:~/ajce/bcom$ ls tax
+aathira.txt  giss.txt
+student@T41:~/ajce/bcom$ cp tax tt
+cp: -r not specified; omitting directory 'tax'
+student@T41:~/ajce/bcom$ cp -r tax tt
+student@T41:~/ajce/bcom$ cat tt
+cat: tt: Is a directory
+student@T41:~/ajce/bcom$ ls tt
+tax
+student@T41:~/ajce/bcom$ ls tax
+aathira.txt  giss.txt
+student@T41:~/ajce/bcom$ cat aathira.txt
+aathira ajith 
+mavelikara
+student@T41:~/ajce/bcom$ cat giss.txt
+aathira ajith 
+mavelikara
+student@T41:~/ajce/bcom$ 
+

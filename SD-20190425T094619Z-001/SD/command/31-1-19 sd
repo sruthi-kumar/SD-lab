@@ -1,0 +1,194 @@
+student@T41:~$ pwd
+/home/student
+student@T41:~$ mkdir ajce
+student@T41:~$ pwd
+/home/student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ mkdir mca
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cd mca
+student@T41:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T41:~/ajce/mca$ mkdir Rmca
+student@T41:~/ajce/mca$ mkdir Lmca
+student@T41:~/ajce/mca$ mkdir intmca
+student@T41:~/ajce/mca$ cd Rmca
+student@T41:~/ajce/mca/Rmca$ cd..
+cd..: command not found
+student@T41:~/ajce/mca/Rmca$ cd ..
+student@T41:~/ajce/mca$ cd ~
+student@T41:~$ pwd
+/home/student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cd /
+student@T41:/$ pwd
+/
+student@T41:/$ cd home
+student@T41:/home$ cd student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cd ..
+student@T41:~$ pwd
+/home/student
+student@T41:~$ cd /
+student@T41:/$ pwd
+/
+student@T41:/$ cd ~
+student@T41:~$ pwd
+/home/student
+student@T41:~$ ls
+ ajce                  exception2        Music             template
+ Desktop               exception2.cpp    Pictures          template.cpp
+ Documents             exception2.o      Public            template.o
+ Downloads             exception.cpp     PycharmProjects   Templates
+'employee class.cpp'   exception.o       ruby              Videos
+ examples.desktop      friendclass       sample1
+ exception             friendclass.cpp   snap
+student@T41:~$ cd ajce
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ ls
+mca
+student@T41:~/ajce$ cd mca
+student@T41:~/ajce/mca$ ls
+intmca  Lmca  Rmca
+student@T41:~/ajce/mca$ ls -l
+total 12
+drwxr-xr-x 2 student student 4096 Jan 31 14:28 intmca
+drwxr-xr-x 2 student student 4096 Jan 31 14:28 Lmca
+drwxr-xr-x 2 student student 4096 Jan 31 14:28 Rmca
+student@T41:~/ajce/mca$ ls -a
+.  ..  intmca  Lmca  Rmca
+student@T41:~/ajce/mca$ man cd
+No manual entry for cd
+student@T41:~/ajce/mca$ cd ..
+student@T41:~/ajce$ cd ..
+student@T41:~$ man cd
+No manual entry for cd
+student@T41:~$ pwd
+/home/student
+student@T41:~$ man ls
+student@T41:~$ cd ajce
+student@T41:~/ajce$ ls >out.txt
+student@T41:~/ajce$ ls
+mca  out.txt
+student@T41:~/ajce$ cd out
+bash: cd: out: No such file or directory
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cd mca
+student@T41:~/ajce/mca$ ls >out.txt
+student@T41:~/ajce/mca$ ls mca
+ls: cannot access 'mca': No such file or directory
+student@T41:~/ajce/mca$ ls
+intmca  Lmca  out.txt  Rmca
+student@T41:~/ajce/mca$ ls /
+bin    dev   initrd.img      lib64       mnt   root  snap  tmp  vmlinuz
+boot   etc   initrd.img.old  lost+found  opt   run   srv   usr  vmlinuz.old
+cdrom  home  lib             media       proc  sbin  sys   var
+student@T41:~/ajce/mca$ ls ..
+mca  out.txt
+student@T41:~/ajce/mca$ ls -R
+.:
+intmca  Lmca  out.txt  Rmca
+
+./intmca:
+
+./Lmca:
+
+./Rmca:
+student@T41:~/ajce/mca$ man pwd
+student@T41:~/ajce/mca$ --version
+--version: command not found
+student@T41:~/ajce/mca$ -- version
+--: command not found
+student@T41:~/ajce/mca$ man pwd
+student@T41:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T41:~/ajce/mca$ cd mca
+bash: cd: mca: No such file or directory
+student@T41:~/ajce/mca$ ls
+intmca  Lmca  out.txt  Rmca
+student@T41:~/ajce/mca$ ls -t
+out.txt  intmca  Lmca  Rmca
+student@T41:~/ajce/mca$ cd ..
+student@T41:~/ajce$ cd ..
+student@T41:~$ pwd
+/home/student
+student@T41:~$ ls -t
+ ajce        template         exception.o           Music
+ Desktop     template.o       exception.cpp         Public
+ sample1     template.cpp     PycharmProjects       Templates
+ Downloads   exception2.cpp   snap                  Videos
+ Pictures    exception2      'employee class.cpp'   examples.desktop
+ ruby        exception2.o     friendclass.cpp
+ Documents   exception        friendclass
+student@T41:~$ ls -s
+total 160
+ 4  ajce                  8  exception2.o      4  ruby
+ 4  Desktop               4  exception.cpp     4  sample1
+ 4  Documents             8  exception.o       4  snap
+ 4  Downloads             4  friendclass      16  template
+ 4 'employee class.cpp'   4  friendclass.cpp   4  template.cpp
+12  examples.desktop      4  Music             8  template.o
+16  exception             4  Pictures          4  Templates
+16  exception2            4  Public            4  Videos
+ 4  exception2.cpp        4  PycharmProjects
+student@T41:~$ ls *
+'employee class.cpp'   exception2.cpp   friendclass       template.cpp
+ examples.desktop      exception2.o     friendclass.cpp   template.o
+ exception             exception.cpp    sample1
+ exception2            exception.o      template
+
+ajce:
+mca  out.txt
+
+Desktop:
+1.png  a.aux    a.dvi  a.pdf         a.tex   dd.log  dd.tex  W3SCHOOLS
+2.png  act.odt  a.log  a.synctex.gz  dd.aux  dd.pdf  sem4SD
+
+Documents:
+formvalidation.html
+
+Downloads:
+dbcar.py             iitbreport-master.zip  radioval.html
+formvalidation.html  palindrome.py
+
+Music:
+
+Pictures:
+1.png
+
+Public:
+
+PycharmProjects:
+reshma
+
+ruby:
+factorial.rb
+
+snap:
+pycharm-community
+
+Templates:
+
+Videos:
+student@T41:~$ ls -d */
+ajce/     Documents/  Music/     Public/           ruby/  Templates/
+Desktop/  Downloads/  Pictures/  PycharmProjects/  snap/  Videos/
+student@T41:~$ ls -d $pwd/*
+/bin    /etc             /lib         /mnt   /run   /sys  /vmlinuz
+/boot   /home            /lib64       /opt   /sbin  /tmp  /vmlinuz.old
+/cdrom  /initrd.img      /lost+found  /proc  /snap  /usr
+/dev    /initrd.img.old  /media       /root  /srv   /var
+student@T41:~$ man pwd
+student@T41:~$ man mkdir
+student@T41:~$ man ls
+student@T41:~$ 
+

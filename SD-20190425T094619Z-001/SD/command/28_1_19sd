@@ -1,0 +1,73 @@
+student@T41:~$ echo hai
+hai
+student@T41:~$ read a
+5
+student@T41:~$ echo a
+a
+student@T41:~$ echo $a
+5
+student@T41:~$ man echo
+student@T41:~$ man read
+student@T41:~$ 
+student@T41:~$ man man
+student@T41:~$ echo -n hai
+haistudent@T41:~$ echo -e hai
+hai
+student@T41:~$ ech -E hai
+
+Command 'ech' not found, did you mean:
+
+  command 'ecm' from deb gmp-ecm
+  command 'bch' from deb bikeshed
+  command 'echo' from deb coreutils
+  command 'ecl' from deb ecl
+  command 'sch' from deb scheme2c
+  command 'ecc' from deb ecere-dev
+  command 'dch' from deb devscripts
+  command 'ecp' from deb ecere-dev
+  command 'ecj' from deb ecj
+  command 'ecs' from deb ecere-dev
+
+Try: apt install <deb name>
+
+student@T41:~$ echo -E hai
+hai
+student@T41:~$ read x
+10
+student@T41:~$ echo the value of x is $x
+the value of x is 10
+student@T41:~$ ls
+ Desktop               exception2       friendclass.cpp   snap
+ Documents             exception2.cpp   Music             template
+ Downloads             exception2.o     Pictures          template.cpp
+'employee class.cpp'   exception.cpp    Public            template.o
+ examples.desktop      exception.o      PycharmProjects   Templates
+ exception             friendclass      ruby              Videos
+student@T41:~$ ls -a
+ .                     examples.desktop   .java               snap
+ ..                    exception          .local              .ssh
+ .bash_history         exception2         .mozilla            template
+ .bash_logout          exception2.cpp     Music               template.cpp
+ .bashrc               exception2.o       .oracle_jre_usage   template.o
+ .cache                exception.cpp      Pictures            Templates
+ .config               exception.o        .profile            .texlive2017
+ Desktop               friendclass        Public              Videos
+ Documents             friendclass.cpp    .PyCharmCE2018.3
+ Downloads             .gnupg             PycharmProjects
+'employee class.cpp'   .ICEauthority      ruby
+student@T41:~$ cat sample1
+cat: sample1: No such file or directory
+student@T41:~$ cat > sample1
+this is a file
+
+/
+$
+mkdir
+q
+
+student@T41:~$ read a b
+5 10
+student@T41:~$ echo $a $b
+5 10
+student@T41:~$ 
+

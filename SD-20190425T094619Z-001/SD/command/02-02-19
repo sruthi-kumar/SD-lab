@@ -1,0 +1,337 @@
+student@T41:~$ pwd
+/home/student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ cd mca
+student@T41:~/ajce/mca$ cd Lmca
+student@T41:~/ajce/mca/Lmca$ touch sample.txt
+student@T41:~/ajce/mca/Lmca$ cat sample.txt
+name: sruthi s kumar
+age:21
+student@T41:~/ajce/mca/Lmca$ cat >sample2.txt
+iam sruthi s kumar
+mca student ^C 
+student@T41:~/ajce/mca/Lmca$ cat sample2.txt
+iam sruthi s kumar
+student@T41:~/ajce/mca/Lmca$ cat sample.txt sample2.txt
+name: sruthi s kumar
+age:21
+iam sruthi s kumar
+student@T41:~/ajce/mca/Lmca$ cat sample2.txt > sample.txt
+student@T41:~/ajce/mca/Lmca$ cat sample2.txt  >  sample.txt
+student@T41:~/ajce/mca/Lmca$ cat sample2.txt
+iam sruthi s kumar
+student@T41:~/ajce/mca/Lmca$ cat sample2.txt sample.txt > newfile.txt
+student@T41:~/ajce/mca/Lmca$ cat newfile.txt
+iam sruthi s kumar
+iam sruthi s kumar
+student@T41:~/ajce/mca/Lmca$ cat sample.txt
+iam sruthi s kumar
+student@T41:~/ajce/mca/Lmca$ cat > sample.txt
+name: sruthi s kumar
+age: 21
+^C
+student@T41:~/ajce/mca/Lmca$ cat sample.txt
+name: sruthi s kumar
+age: 21
+student@T41:~/ajce/mca/Lmca$ cat -n sample.txt
+     1	name: sruthi s kumar
+     2	age: 21
+student@T41:~/ajce/mca/Lmca$ cat sample.txt sample2.txt
+name: sruthi s kumar
+age: 21
+iam sruthi s kumar
+student@T41:~/ajce/mca/Lmca$ cat sample2.txt sample.txt > newfile.txt
+student@T41:~/ajce/mca/Lmca$ cat newfile.txt
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+student@T41:~/ajce/mca/Lmca$ cat *.txt
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+student@T41:~/ajce/mca/Lmca$ cat -s newfile.txt
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+student@T41:~/ajce/mca/Lmca$ man cat
+student@T41:~/ajce/mca/Lmca$ cat -T newfile.txt
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+student@T41:~/ajce/mca/Lmca$ cat sample2.txt sample.txt newfile.txt > new2.txt
+student@T41:~/ajce/mca/Lmca$ cat new2.txt
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+student@T41:~/ajce/mca/Lmca$ cat sample2.txt; cat sample.txt; cat new2.txt
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+iam sruthi s kumar
+name: sruthi s kumar
+age: 21
+student@T41:~/ajce/mca/Lmca$ cat sample.txt
+name: sruthi s kumar
+age: 21
+student@T41:~/ajce/mca/Lmca$ cat > sample3.txt
+1
+
+
+
+2
+
+
+
+3
+4
+5
+
+6
+^C
+student@T41:~/ajce/mca/Lmca$ cat sample3.txt
+1
+
+
+
+2
+
+
+
+3
+4
+5
+
+6
+student@T41:~/ajce/mca/Lmca$ cat -s sample3.txt
+1
+
+2
+
+3
+4
+5
+
+6
+student@T41:~/ajce/mca/Lmca$ cat -T sample3.txt
+1
+
+
+
+2
+
+
+
+3
+4
+5
+
+6
+student@T41:~/ajce/mca/Lmca$ cat sample3.txt
+1
+2
+
+
+
+
+
+
+3
+4
+
+
+
+5
+
+6
+student@T41:~/ajce/mca/Lmca$ cat -n sample3.txt
+     1	1
+     2	2
+     3	
+     4	
+     5	
+     6	
+     7	
+     8	
+     9	3
+    10	4
+    11	
+    12	
+    13	
+    14	5
+    15	
+    16	6
+student@T41:~/ajce/mca/Lmca$ cat -s sample3.txt
+1
+2
+
+3
+4
+
+5
+
+6
+student@T41:~/ajce/mca/Lmca$ cat -n sample.txt
+     1	name: sruthi s kumar
+     2	age: 21
+student@T41:~/ajce/mca/Lmca$ cat -s sample3.txt
+1
+2
+
+3
+4
+
+5
+
+6
+student@T41:~/ajce/mca/Lmca$ cat sample3.txt
+1
+2
+
+
+
+
+
+
+3
+4
+
+
+
+5
+
+6
+student@T41:~/ajce/mca/Lmca$ cat sample.txt
+name: sruthi 	s	 kumar
+age: 	21
+student@T41:~/ajce/mca/Lmca$ cat -T sample.txt
+name: sruthi ^Is^I kumar
+age: ^I21
+student@T41:~/ajce/mca/Lmca$ man cat
+student@T41:~/ajce/mca/Lmca$ cd..
+cd..: command not found
+student@T41:~/ajce/mca/Lmca$ cd ..
+student@T41:~/ajce/mca$ cd ..
+student@T41:~/ajce$ cd mca
+student@T41:~/ajce/mca$ mv Lmca Rmca
+student@T41:~/ajce/mca$ ls Rmca
+Lmca
+student@T41:~/ajce/mca$ man mv
+student@T41:~/ajce/mca$ ls Lmca
+ls: cannot access 'Lmca': No such file or directory
+student@T41:~/ajce/mca$ mv sample.txt intmca
+mv: cannot stat 'sample.txt': No such file or directory
+student@T41:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T41:~/ajce/mca$ cd Rmca
+student@T41:~/ajce/mca/Rmca$ cd Lmca
+student@T41:~/ajce/mca/Rmca/Lmca$ mv sample.txt move
+student@T41:~/ajce/mca/Rmca/Lmca$ ls move
+sample.txt
+student@T41:~/ajce/mca/Rmca/Lmca$ cd ..
+student@T41:~/ajce/mca/Rmca$ cd ..
+student@T41:~/ajce/mca$ ls mca
+ls: cannot access 'mca': No such file or directory
+student@T41:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T41:~/ajce/mca$ cat mca
+cat: mca: No such file or directory
+student@T41:~/ajce/mca$ cd lmca
+bash: cd: lmca: No such file or directory
+student@T41:~/ajce/mca$ pd
+
+Command 'pd' not found, but can be installed with:
+
+apt install puredata-core
+Please ask your administrator.
+
+student@T41:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T41:~/ajce/mca$ cd Rmca
+student@T41:~/ajce/mca/Rmca$ ls Rmca
+ls: cannot access 'Rmca': No such file or directory
+student@T41:~/ajce/mca/Rmca$ cd ..
+student@T41:~/ajce/mca$ ls rmca
+ls: cannot access 'rmca': No such file or directory
+student@T41:~/ajce/mca$ ls Rmca
+Lmca
+student@T41:~/ajce/mca$ mv sample.txt sample2.txt Lmca
+mv: target 'Lmca' is not a directory
+student@T41:~/ajce/mca$ cd Lmca
+bash: cd: Lmca: No such file or directory
+student@T41:~/ajce/mca$ cd Rmca
+student@T41:~/ajce/mca/Rmca$ pwd
+/home/student/ajce/mca/Rmca
+student@T41:~/ajce/mca/Rmca$ mv sample.txt sample2.txt Lmca
+mv: cannot stat 'sample.txt': No such file or directory
+mv: cannot stat 'sample2.txt': No such file or directory
+student@T41:~/ajce/mca/Rmca$ mv sample.txt sample2.txt move
+mv: target 'move' is not a directory
+student@T41:~/ajce/mca/Rmca$ ls
+]Lmca
+student@T41:~/ajce/mca/Rmca$ mv sample.txt sample2.txt  Lmca
+mv: cannot stat 'sample.txt': No such file or directory
+mv: cannot stat 'sample2.txt': No such file or directory
+student@T41:~/ajce/mca/Rmca$ cd ..
+student@T41:~/ajce/mca$ ls
+intmca  out.txt  Rmca
+student@T41:~/ajce/mca$ cd Rmca
+student@T41:~/ajce/mca/Rmca$ ls
+Lmca
+student@T41:~/ajce/mca/Rmca$ cd Lmca
+student@T41:~/ajce/mca/Rmca/Lmca$ ls
+file.txt  move  new2.txt  newfile.txt  sample2.txt  sample3.txt
+student@T41:~/ajce/mca/Rmca/Lmca$ mv sample.txt sample2.txt move
+mv: cannot stat 'sample.txt': No such file or directory
+student@T41:~/ajce/mca/Rmca/Lmca$ mv sample3.txt sample2.txt move
+mv: cannot stat 'sample2.txt': No such file or directory
+student@T41:~/ajce/mca/Rmca/Lmca$ mv file.txt sample2.txt sample3.txt move
+mv: cannot stat 'sample2.txt': No such file or directory
+mv: cannot stat 'sample3.txt': No such file or directory
+student@T41:~/ajce/mca/Rmca/Lmca$ mv file.txt  move
+mv: cannot stat 'file.txt': No such file or directory
+student@T41:~/ajce/mca/Rmca/Lmca$ ls
+move  new2.txt  newfile.txt
+student@T41:~/ajce/mca/Rmca/Lmca$ mv new2.txt move
+student@T41:~/ajce/mca/Rmca/Lmca$ ls
+move  newfile.txt
+student@T41:~/ajce/mca/Rmca/Lmca$ mv newfile.txt move
+student@T41:~/ajce/mca/Rmca/Lmca$ ls
+move
+student@T41:~/ajce/mca/Rmca/Lmca$ cd move
+student@T41:~/ajce/mca/Rmca/Lmca/move$ ls
+file.txt  new2.txt  newfile.txt  sample2.txt  sample3.txt  sample.txt
+student@T41:~/ajce/mca/Rmca/Lmca/move$ cd ..
+student@T41:~/ajce/mca/Rmca/Lmca$ ls
+move
+student@T41:~/ajce/mca/Rmca/Lmca$ mkdir move2
+student@T41:~/ajce/mca/Rmca/Lmca$ cd move
+student@T41:~/ajce/mca/Rmca/Lmca/move$ ls move
+ls: cannot access 'move': No such file or directory
+student@T41:~/ajce/mca/Rmca/Lmca/move$ ls
+file.txt  new2.txt  newfile.txt  sample2.txt  sample3.txt  sample.txt
+student@T41:~/ajce/mca/Rmca/Lmca/move$ mv *.txt move2
+mv: target 'move2' is not a directory
+student@T41:~/ajce/mca/Rmca/Lmca/move$ ls
+file.txt  new2.txt  newfile.txt  sample2.txt  sample3.txt  sample.txt
+student@T41:~/ajce/mca/Rmca/Lmca/move$ mkdir move2
+student@T41:~/ajce/mca/Rmca/Lmca/move$ ls
+file.txt  move2  new2.txt  newfile.txt  sample2.txt  sample3.txt  sample.txt
+student@T41:~/ajce/mca/Rmca/Lmca/move$ mv *.txt move2
+student@T41:~/ajce/mca/Rmca/Lmca/move$ ls move
+ls: cannot access 'move': No such file or directory
+student@T41:~/ajce/mca/Rmca/Lmca/move$ ls
+move2
+student@T41:~/ajce/mca/Rmca/Lmca/move$ cd move2
+student@T41:~/ajce/mca/Rmca/Lmca/move/move2$ ls
+file.txt  new2.txt  newfile.txt  sample2.txt  sample3.txt  sample.txt
+student@T41:~/ajce/mca/Rmca/Lmca/move/move2$ 
+

@@ -1,0 +1,104 @@
+student@T43:~$ gedit test.sh
+student@T43:~$ chmod +x test.sh
+student@T43:~$ ./test.sh
+the command is ./test.sh
+the first argument is 
+the  second argument is 
+the  third argument is 
+0
+
+
+student@T43:~$ ./test.sh ad cf df
+the command is ./test.sh
+the first argument is ad
+the  second argument is cf
+the  third argument is df
+3
+ad cf df
+ad cf df
+student@T43:~$ gedit ex1.sh
+student@T43:~$ chmod +x ex1.sh
+student@T43:~$ ./ex1.sh 
+enter a number:4
+./ex1.sh: line 6: [4: command not found
+positive
+student@T43:~$ ./ex1.sh 
+enter a number:0
+./ex1.sh: line 6: [0: command not found
+positive
+student@T43:~$ gedit ex1.sh
+student@T43:~$ chmod +x ex1.sh
+student@T43:~$ ./ex1.sh 
+enter a number:54
+positive
+student@T43:~$ ./ex1.sh 
+enter a number:0
+zero
+student@T43:~$ ./ex1.sh 
+enter a number:-8
+negative
+student@T43:~$ gedit ex2.sh
+student@T43:~$ chmod +x ex2.sh
+student@T43:~$ ./ex2.sh 
+./ex2.sh: line 4: [: missing `]'
+typed argument is neither monday nor tuesday
+student@T43:~$ gedit ex2.sh
+student@T43:~$ ./ex2.sh 
+typed argument is neither monday nor tuesday
+student@T43:~$ gedit ex2.sh
+student@T43:~$ ./ex2.sh 
+enter a number
+1
+the typed argument is monday
+student@T43:~$ ./ex2.sh 
+enter a number
+2
+the typed argument is tuesday
+student@T43:~$ ./ex2.sh 
+enter a number
+3
+typed argument is neither monday nor tuesday
+student@T43:~$ gedit ex3.sh
+student@T43:~$ chmod +x ex3.sh
+student@T43:~$ ./ex3.sh 
+3 times 5 is 15 
+4 times 5 is 20 
+5 times 5 is 25 
+7 times 5 is 35 
+student@T43:~$ gedit ex4.sh
+student@T43:~$ chmod +x ex4.sh
+student@T43:~$ ./ex4.sh 
+WELCOME TO 1 TIMES
+WELCOME TO 2 TIMES
+WELCOME TO 3 TIMES
+WELCOME TO 4 TIMES
+WELCOME TO 5 TIMES
+student@T43:~$ chmod +x ex4.sh
+student@T43:~$ ./ex4.sh 
+WELCOME TO TIMES OF INDIA
+WELCOME TO TIMES OF INDIA
+WELCOME TO TIMES OF INDIA
+WELCOME TO TIMES OF INDIA
+WELCOME TO TIMES OF INDIA
+student@T43:~$ gedit ex5.sh
+student@T43:~$ chmod +x ex5.sh
+student@T43:~$ ./ex5.sh 
+welcome 0 times
+welcome 2 times
+welcome 4 times
+welcome 6 times
+welcome 8 times
+welcome 10 times
+student@T43:~$ gedit ex6.sh
+student@T43:~$ chmod +x ex6.sh
+student@T43:~$ ./ex6.sh 
+welcome to 1 times
+welcome to 2 times
+welcome to 3 times
+welcome to 4 times
+welcome to 5 times
+student@T43:~$ gedit ex7.sh
+student@T43:~$ chmod +x ex7.sh
+student@T43:~$ ./ex6.sh 
+
+

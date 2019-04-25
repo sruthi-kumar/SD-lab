@@ -1,0 +1,39 @@
+student@T41:~$ pwd
+/home/student
+student@T41:~$ cd sd
+bash: cd: sd: No such file or directory
+student@T41:~$ cd ajce
+student@T41:~/ajce$ cd sd
+'student@T41:~/ajce/sd$ pwd
+/home/student/ajce/sd
+student@T41:~/ajce/sd$ cat a.txt
+india is my country
+student@T41:~/ajce/sd$ wc a.txt
+ 1  4 20 a.txt
+student@T41:~/ajce/sd$ wc -l a.txt
+1 a.txt
+student@T41:~/ajce/sd$ wc -c a.txt
+20 a.txt
+student@T41:~/ajce/sd$ wc -m a.txt
+20 a.txt
+student@T41:~/ajce/sd$ wc -L a.txt
+19 a.txt
+student@T41:~/ajce/sd$ wc -w a.txt
+4 a.txt
+student@T41:~/ajce/sd$ cat b.txt
+aaa bbbcccc dd
+12 34       45
+student@T41:~/ajce/sd$ cut -c 4,5,6 b.txt
+ bb
+34 
+student@T41:~/ajce/sd$ cut -b 1 b.txt
+a
+1
+student@T41:~/ajce/sd$ cut -b 1-3 b.txt
+aaa
+12 
+student@T41:~/ajce/sd$ cut -f 3 b.txt
+aaa bbbcccc dd
+12 34       45
+student@T41:~/ajce/sd$ 
+

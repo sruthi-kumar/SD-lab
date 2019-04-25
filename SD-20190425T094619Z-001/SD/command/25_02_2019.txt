@@ -1,0 +1,297 @@
+student@T41:~$ pwd
+/home/student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ cd sd
+student@T41:~/ajce/sd$ pwd
+/home/student/ajce/sd
+student@T41:~/ajce/sd$ more -d f1.txt
+Becoming an Artificial Intelligence Engineer puts you on the path to an exciting
+, evolving career that is predicted to grow sharply into 2025 and beyond. Artifi
+cial intelligence and Machine Learning will impact all segments of daily life by
+ 2025, with applications in a wide range of industries such as healthcare, trans
+portation, insurance, transport and logistics and even customer service. The nee
+d for AI specialists exists in just about every field as companies seek to give 
+computers the ability to think, learn and adapt.
+student@T41:~/ajce/sd$ more +5 f1.txt
+student@T41:~/ajce/sd$ cat f1.txt
+Becoming an Artificial Intelligence Engineer puts you on the path to an exciting, evolving career that is predicted to grow sharply into 2025 and beyond. Artificial intelligence and Machine Learning will impact all segments of daily life by 2025, with applications in a wide range of industries such as healthcare, transportation, insurance, transport and logistics and even customer service. The need for AI specialists exists in just about every field as companies seek to give computers the ability to think, learn and adapt.
+student@T41:~/ajce/sd$ less f1.txt
+student@T41:~/ajce/sd$ less -c /home/student/ajce/sd
+/home/student/ajce/sd is a directory
+student@T41:~/ajce/sd$ cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+student@T41:~/ajce/sd$ head state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T41:~/ajce/sd$ head -n 20 state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+student@T41:~/ajce/sd$ head -c 1 state.txt
+Astudent@T41:~/ajce/sd$ head -c 20 state.txt
+Andhra Pradesh
+Arunastudent@T41:~/ajce/sd$ head state.txt capital.txt
+==> state.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+
+==> capital.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T41:~/ajce/sd$ head -q state.txt capital.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T41:~/ajce/sd$ head -v state.ttx
+head: cannot open 'state.ttx' for reading: No such file or directory
+student@T41:~/ajce/sd$ head -v state.txt
+==> state.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T41:~/ajce/sd$ head -v state.txt capital.txt
+==> state.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+
+==> capital.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T41:~/ajce/sd$ tail state.txt
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+student@T41:~/ajce/sd$ tail -n 10 state.txt
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+student@T41:~/ajce/sd$ tail -v state.txt capital.txt
+==> state.txt <==
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+
+==> capital.txt <==
+Itanagar
+Dispur
+Patna
+Raipur
+Panaji
+Gandhinagar
+Chandigarh
+Shimla
+Srinagar
+
+student@T41:~/ajce/sd$ tail -f state.txt
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+
+
+^C
+student@T41:~/ajce/sd$ tail -3 state.txt
+West Bengal
+
+
+student@T41:~/ajce/sd$ tail -2- state.txt
+tail: option used in invalid context -- 2
+student@T41:~/ajce/sd$ tail -20 state.txt
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+student@T41:~/ajce/sd$ tail +25 state.txt
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+student@T41:~/ajce/sd$ cat > state2.txt
+mizoram
+nagaland
+odisha
+punjab
+rajasthan
+sikkim
+tamil nadu
+telangana
+tripura
+uttar pradesh
+uttarakhand
+west bengal
+kerala
+karnataka
+arunachal pradesh
+andhra pradesh
+goa
+^C
+student@T41:~/ajce/sd$ tail state2.txt
+telangana
+tripura
+uttar pradesh
+uttarakhand
+west bengal
+kerala
+karnataka
+arunachal pradesh
+andhra pradesh
+goa
+student@T41:~/ajce/sd$ 
+

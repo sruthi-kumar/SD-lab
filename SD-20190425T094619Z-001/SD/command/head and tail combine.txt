@@ -1,0 +1,275 @@
+student@T41:~$ cd ajce
+student@T41:~/ajce$ cd sd
+student@T41:~/ajce/sd$ pwd
+/home/student/ajce/sd
+student@T41:~/ajce/sd$ cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+student@T41:~/ajce/sd$ head -10 state.txt; tail -10 state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+student@T41:~/ajce/sd$ head -10 state.txt; tail -10 state2.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+telangana
+tripura
+uttar pradesh
+uttarakhand
+west bengal
+kerala
+karnataka
+arunachal pradesh
+andhra pradesh
+goa
+student@T41:~/ajce/sd$ cat state2.txt
+mizoram
+nagaland
+odisha
+punjab
+rajasthan
+sikkim
+tamil nadu
+telangana
+tripura
+uttar pradesh
+uttarakhand
+west bengal
+kerala
+karnataka
+arunachal pradesh
+andhra pradesh
+goa
+student@T41:~/ajce/sd$ head -10 state2.txt; tail -10 state2.txt
+mizoram
+nagaland
+odisha
+punjab
+rajasthan
+sikkim
+tamil nadu
+telangana
+tripura
+uttar pradesh
+telangana
+tripura
+uttar pradesh
+uttarakhand
+west bengal
+kerala
+karnataka
+arunachal pradesh
+andhra pradesh
+goa
+student@T41:~/ajce/sd$ cat capital.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Hyderabad
+Itanagar
+Dispur
+Patna
+Raipur
+Panaji
+Gandhinagar
+Chandigarh
+Shimla
+Srinagar
+
+student@T41:~/ajce/sd$ cat state.ttx
+cat: state.ttx: No such file or directory
+student@T41:~/ajce/sd$ cat state.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+
+student@T41:~/ajce/sd$ head state.txt capital.txt
+==> state.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+
+==> capital.txt <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T41:~/ajce/sd$ head -q  state.txt capital.txt
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T41:~/ajce/sd$ head -n 10 state2.txt | tail -10 
+mizoram
+nagaland
+odisha
+punjab
+rajasthan
+sikkim
+tamil nadu
+telangana
+tripura
+uttar pradesh
+student@T41:~/ajce/sd$ head -10 state2.txt; tail -10 state2.txt
+mizoram
+nagaland
+odisha
+punjab
+rajasthan
+sikkim
+tamil nadu
+telangana
+tripura
+uttar pradesh
+telangana
+tripura
+uttar pradesh
+uttarakhand
+west bengal
+kerala
+karnataka
+arunachal pradesh
+andhra pradesh
+goa
+student@T41:~/ajce/sd$ head -n 10 state2.txt | tail -5
+sikkim
+tamil nadu
+telangana
+tripura
+uttar pradesh
+student@T41:~/ajce/sd$ cat state2.txt
+mizoram
+nagaland
+odisha
+punjab
+rajasthan
+sikkim
+tamil nadu
+telangana
+tripura
+uttar pradesh
+uttarakhand
+west bengal
+kerala
+karnataka
+arunachal pradesh
+andhra pradesh
+goa
+student@T41:~/ajce/sd$

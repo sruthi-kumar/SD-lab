@@ -1,0 +1,296 @@
+student@T41:~$ cd sruthi
+student@T41:~/sruthi$ git init Example
+Initialized empty Git repository in /home/student/sruthi/Example/.git/
+student@T41:~/sruthi$ cd Example
+student@T41:~/sruthi/Example$ git config user.name "sruthikumar"
+student@T41:~/sruthi/Example$ get config user.email "sruthyskumar@mca.ajce.in"
+
+Command 'get' not found, but there are 18 similar ones.
+
+student@T41:~/sruthi/Example$ git config user.email "sruthyskumar@mca.ajce.in"
+student@T41:~/sruthi/Example$ gedit fileeg.txt
+student@T41:~/sruthi/Example$ gedit fileeg.txt
+student@T41:~/sruthi/Example$ git add fileeg.txt
+student@T41:~/sruthi/Example$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   fileeg.txt
+
+student@T41:~/sruthi/Example$ git commit -m "haiiii"
+[master (root-commit) e96bdfa] haiiii
+ 1 file changed, 11 insertions(+)
+ create mode 100644 fileeg.txt
+student@T41:~/sruthi/Example$ git remote add origin https://github.com/sruthi-kumar/Example
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+sruUsername for 'https://github.com': sruthikumar
+Password for 'https://srusruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar 
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+srUsername for 'https://github.com': uthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthikumar
+Password for 'https://sruthikumar@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin master
+Username for 'https://github.com': sruthi-kumar
+Password for 'https://sruthi-kumar@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sruthi-kumar/Example
+ * [new branch]      master -> master
+student@T41:~/sruthi/Example$ git clone https://github.com/sruthi-kumar/Example
+Cloning into 'Example'...
+Username for 'https://github.com': sruthi-kumar
+Password for 'https://sruthi-kumar@github.com': 
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+student@T41:~/sruthi/Example$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Example/
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@T41:~/sruthi/Example$ git branch newbranch
+student@T41:~/sruthi/Example$ git checkout newbranch
+Switched to branch 'newbranch'
+student@T41:~/sruthi/Example$ git push origin newbranch
+Username for 'https://github.com': sruthi-kumar
+Password for 'https://sruthi-kumar@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'newbranch' on GitHub by visiting:
+remote:      https://github.com/sruthi-kumar/Example/pull/new/newbranch
+remote: 
+To https://github.com/sruthi-kumar/Example
+ * [new branch]      newbranch -> newbranch
+student@T41:~/sruthi/Example$ git fetch origin master
+Username for 'https://github.com': sruthi-kumar
+Password for 'https://sruthi-kumar@github.com': 
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/sruthi-kumar/Example
+ * branch            master     -> FETCH_HEAD
+   e96bdfa..74acc1a  master     -> origin/master
+student@T41:~/sruthi/Example$ git merge origin newbranch
+merge: origin - not something we can merge
+student@T41:~/sruthi/Example$ git status
+On branch newbranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Example/
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@T41:~/sruthi/Example$ git merge master
+Already up to date.
+student@T41:~/sruthi/Example$ git pull origin master
+Username for 'https://github.com': sruthi-kumar
+Password for 'https://sruthi-kumar@github.com': 
+From https://github.com/sruthi-kumar/Example
+ * branch            master     -> FETCH_HEAD
+Updating e96bdfa..74acc1a
+Fast-forward
+ fileeg.txt | 1 +
+ 1 file changed, 1 insertion(+)
+student@T41:~/sruthi/Example$ git branch
+  master
+* newbranch
+student@T41:~/sruthi/Example$ git branch sample
+student@T41:~/sruthi/Example$ git checkout sample
+Switched to branch 'sample'
+student@T41:~/sruthi/Example$ git push origin sample
+Username for 'https://github.com': sruthi-kumar
+Password for 'https://sruthi-kumar@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 688 bytes | 688.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'sample' on GitHub by visiting:
+remote:      https://github.com/sruthi-kumar/Example/pull/new/sample
+remote: 
+To https://github.com/sruthi-kumar/Example
+ * [new branch]      sample -> sample
+student@T41:~/sruthi/Example$ git push origin sample
+Username for 'https://github.com': git branch
+Password for 'https://git branch@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sruthi-kumar/Example/'
+student@T41:~/sruthi/Example$ git push origin sample
+Username for 'https://github.com': sruthi-kumar
+Password for 'https://sruthi-kumar@github.com': 
+Everything up-to-date
+student@T41:~/sruthi/Example$ git branch
+  master
+  newbranch
+* sample
+student@T41:~/sruthi/Example$ git branch -d sample
+error: Cannot delete branch 'sample' checked out at '/home/student/sruthi/Example'
+student@T41:~/sruthi/Example$ git checkout newbranch
+Switched to branch 'newbranch'
+student@T41:~/sruthi/Example$ git branch
+  master
+* newbranch
+  sample
+student@T41:~/sruthi/Example$ git branch -d sample
+Deleted branch sample (was 74acc1a).
+student@T41:~/sruthi/Example$ git fetch newbranch
+fatal: 'newbranch' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+student@T41:~/sruthi/Example$ git fetch master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+student@T41:~/sruthi/Example$ git fetch origin master
+Username for 'https://github.com': sruthi-kumar
+Password for 'https://sruthi-kumar@github.com': 
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/sruthi-kumar/Example
+ * branch            master     -> FETCH_HEAD
+   74acc1a..6927e9c  master     -> origin/master
+student@T41:~/sruthi/Example$ git merge origin master
+merge: origin - not something we can merge
+student@T41:~/sruthi/Example$ git branch
+  master
+* newbranch
+student@T41:~/sruthi/Example$ git checkout master
+Switched to branch 'master'
+student@T41:~/sruthi/Example$ git fetch origin master
+Username for 'https://github.com': sruthi-kumar
+Password for 'https://sruthi-kumar@github.com': 
+From https://github.com/sruthi-kumar/Example
+ * branch            master     -> FETCH_HEAD
+student@T41:~/sruthi/Example$ git merge origin master
+merge: origin - not something we can merge
+student@T41:~/sruthi/Example$ git diff origin/master
+diff --git a/README.md b/README.md
+deleted file mode 100644
+index b4f04f4..0000000
+--- a/README.md
++++ /dev/null
+@@ -1 +0,0 @@
+-# Example
+diff --git a/fileeg.txt b/fileeg.txt
+index 9630016..e19096a 100644
+--- a/fileeg.txt
++++ b/fileeg.txt
+@@ -9,4 +9,3 @@ sum= ` expr $sum + $a `
+ fi 
+ done
+ echo "odd numbers :$sum"
+-echo "howa u "
+student@T41:~/sruthi/Example$ git merge origin/master
+Updating e96bdfa..6927e9c
+Fast-forward
+ README.md  | 1 +
+ fileeg.txt | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 README.md
+student@T41:~/sruthi/Example$ git diff origin/master
+student@T41:~/sruthi/Example$ git rm -f readme.md
+fatal: pathspec 'readme.md' did not match any files
+student@T41:~/sruthi/Example$ git rm readme.md
+fatal: pathspec 'readme.md' did not match any files
+student@T41:~/sruthi/Example$ git rm -f README.md
+rm 'README.md'
+student@T41:~/sruthi/Example$ git diff origin/master
+diff --git a/README.md b/README.md
+deleted file mode 100644
+index b4f04f4..0000000
+--- a/README.md
++++ /dev/null
+@@ -1 +0,0 @@
+-# Example
+student@T41:~/sruthi/Example$ git revert HEAD
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+student@T41:~/sruthi/Example$ 
+

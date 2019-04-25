@@ -1,0 +1,29 @@
+server 
+
+student@T41:~$ gedit sever.java
+student@T41:~$ javac server.java
+student@T41:~$ gedit server.java
+student@T41:~$ javac server.java
+student@T41:~$ java server
+waiting for client.........
+client connected 
+client:>hai
+hello
+client:>uu
+
+
+   client
+
+
+
+student@T41:~$ gedit client.java
+student@T41:~$ gedit client.java
+student@T41:~$ javac client.java
+student@T41:~$ java client
+Client connected to the server
+to Start the chat, type message and press Enter key
+hai
+server:>hello
+uu
+
+

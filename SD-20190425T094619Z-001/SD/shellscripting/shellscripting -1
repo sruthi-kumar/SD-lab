@@ -1,0 +1,88 @@
+student@T41:~$ vi sruti.sh
+student@T41:~$ chmod +x sruti.sh
+student@T41:~$ ./sruti.sh
+hello
+student@T41:~$ gedit simple.sh
+student@T41:~$ chmod +x simple.sh
+student@T41:~$ ./simple.sh
+iam shruti
+student@T41:~$ gedit secomd.sh
+student@T41:~$ chmod +x secomd.sh
+student@T41:~$ ./secomd.sh
+hello world
+The date today is Thu Mar 21 14:29:41 IST 2019
+The current directory is /home/student
+student@T41:~$ 
+student@T41:~$ gedit three.sh
+student@T41:~$ chmod +x three.sh
+student@T41:~$ ./three.sh
+value of var is test String
+student@T41:~$ gedit four.sh
+student@T41:~$ chmod +x four.sh
+student@T41:~$ ./four.sh
+value of var is $var
+student@T41:~$ gedit five.sh
+student@T41:~$ chmod +x five.sh
+student@T41:~$ ./five.sh y z a b
+The command is ./five.sh
+ The First Argument is y
+ The Second Argument is z
+ The Third Argument is a
+The Fourth Argument is b
+student@T41:~$ gedit five.sh
+student@T41:~$ ./five.sh
+'The command is ./five.sh
+ The First Argument is 
+ The Second Argument is 
+ The Third Argument is 
+The Fourth Argument is 
+ total number of parameter 0
+name ./five.sh
+single word 
+ arry 
+student@T41:~$ gedit five.sh
+student@T41:~$ chmod +x five.sh
+student@T41:~$ ./five.sh a b c d
+The command is ./five.sh
+ The First Argument is a
+ The Second Argument is b
+ The Third Argument is c
+The Fourth Argument is d
+ total number of parameter 4
+name ./five.sh
+single word a b c d
+ arry a b c d
+student@T41:~$ gedit six.sh
+student@T41:~$ chmod +x six.sh
+student@T41:~$ ./six.sh
+./six.sh: line 1: $: command not found
+
+student@T41:~$ gedit six.sh
+student@T41:~$ ./ six.sh
+bash: ./: Is a directory
+student@T41:~$ gedit six.sh
+student@T41:~$ ./ six.sh
+bash: ./: Is a directory
+student@T41:~$ ./six.sh
+
+student@T41:~$ gedit seven.sh
+student@T41:~$ chmod +x seven.sh
+student@T41:~$ ./seven.sh
+5 + 10=15
+student@T41:~$ gedit nine.sh
+student@T41:~$ chmod +x nine.sh
+student@T41:~$ ./nine.sh
+Enter two numbers:x5
+./nine.sh: line 2: syntax error near unexpected token `('
+./nine.sh: line 2: `ans=((x+y))'
++5=
+student@T41:~$ gedit nine.sh
+student@T41:~$ chmod +x nine.sh
+student@T41:~$ ./nine.sh
+Enter two numbers: 2 3
+2+3=5
+student@T41:~$ gedit eight.sh
+student@T41:~$ chmod +x eight.sh
+student@T41:~$ ./eight.sh
+sUM IS 30
+

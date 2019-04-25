@@ -1,0 +1,440 @@
+student@T41:~/ajce/sd$ find . -name state.txt
+./state.txt
+student@T41:~/ajce/sd$ cd ..
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ find . -name state.txt
+./sd/state.txt
+student@T41:~/ajce$ cd ..
+student@T41:~$ cd ..
+student@T41:/home$ pwd
+/home
+student@T41:/home$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T41:/home$ cd student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ cd ..
+student@T41:~$ cd ..
+student@T41:/home$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T41:/home$ cd student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ find . -name state.txt
+./sd/state.txt
+student@T41:~/ajce$ find ./ sd *.txt
+./
+./bcom
+./bcom/tt
+./bcom/tt/tax
+./bcom/tt/tax/aathira.txt
+./bcom/tt/tax/giss.txt
+./bcom/aathira.txt
+./bcom/tax
+./bcom/tax/aathira.txt
+./bcom/tax/giss.txt
+./bcom/giss.txt
+./bcom/giss.txt~
+./mca
+./mca/lateral.txt
+./bca
+./sd
+./sd/search.txt
+./sd/fruit.txt
+./sd/state.txt
+./sd/a.txt
+./sd/copy
+./sd/copy/grep.txt
+./sd/capital.txt
+./sd/state2.txt
+./sd/b.txt
+./sd/head and tail combine.txt
+./sd/Untitled Document 1
+./sd/25.txt
+./sd/f1.txt
+./sd/search2.txt
+sd
+sd/search.txt
+sd/fruit.txt
+sd/state.txt
+sd/a.txt
+sd/copy
+sd/copy/grep.txt
+sd/capital.txt
+sd/state2.txt
+sd/b.txt
+sd/head and tail combine.txt
+sd/Untitled Document 1
+sd/25.txt
+sd/f1.txt
+sd/search2.txt
+find: ‘*.txt’: No such file or directory
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cd sd
+student@T41:~/ajce/sd$ find ./ sd *.txt
+./
+./search.txt
+./fruit.txt
+./state.txt
+./a.txt
+./copy
+./copy/grep.txt
+./capital.txt
+./state2.txt
+./b.txt
+./head and tail combine.txt
+./Untitled Document 1
+./25.txt
+./f1.txt
+./search2.txt
+find: ‘sd’: No such file or directory
+25.txt
+a.txt
+b.txt
+capital.txt
+f1.txt
+fruit.txt
+head and tail combine.txt
+search2.txt
+search.txt
+state2.txt
+state.txt
+student@T41:~/ajce/sd$ find ./ sd -empty
+./null
+find: ‘sd’: No such file or directory
+student@T41:~/ajce/sd$ find ./ sd -perm 664
+./fruit.txt
+./state.txt
+./a.txt
+./capital.txt
+./b.txt
+./head and tail combine.txt
+./Untitled Document 1
+./25.txt
+./f1.txt
+find: ‘sd’: No such file or directory
+student@T41:~/ajce/sd$ man find
+student@T41:~/ajce/sd$ find ./ sd -perm 777
+find: ‘sd’: No such file or directory
+student@T41:~/ajce/sd$ cd ..
+student@T41:~/ajce$ find ./ sd -empty
+./bca
+./sd/null
+sd/null
+student@T41:~/ajce$ find ./ sd *.txt
+./
+./bcom
+./bcom/tt
+./bcom/tt/tax
+./bcom/tt/tax/aathira.txt
+./bcom/tt/tax/giss.txt
+./bcom/aathira.txt
+./bcom/tax
+./bcom/tax/aathira.txt
+./bcom/tax/giss.txt
+./bcom/giss.txt
+./bcom/giss.txt~
+./mca
+./mca/lateral.txt
+./bca
+./sd
+./sd/search.txt
+./sd/fruit.txt
+./sd/state.txt
+./sd/a.txt
+./sd/null
+./sd/copy
+./sd/copy/grep.txt
+./sd/capital.txt
+./sd/state2.txt
+./sd/b.txt
+./sd/head and tail combine.txt
+./sd/Untitled Document 1
+./sd/25.txt
+./sd/f1.txt
+./sd/search2.txt
+sd
+sd/search.txt
+sd/fruit.txt
+sd/state.txt
+sd/a.txt
+sd/null
+sd/copy
+sd/copy/grep.txt
+sd/capital.txt
+sd/state2.txt
+sd/b.txt
+sd/head and tail combine.txt
+sd/Untitled Document 1
+sd/25.txt
+sd/f1.txt
+sd/search2.txt
+find: ‘*.txt’: No such file or directory
+student@T41:~/ajce$ cd ~
+student@T41:~$ find ~ -perm 777
+/home/student/snap/vlc/common/.cache/gio-modules/libgiolibproxy.so
+/home/student/snap/vlc/common/.cache/gio-modules/libdconfsettings.so
+/home/student/snap/vlc/common/.cache/gio-modules/libgiognutls.so
+/home/student/snap/vlc/common/.cache/gio-modules/libgiognomeproxy.so
+/home/student/snap/vlc/current
+/home/student/snap/vlc/770/.themes
+/home/student/snap/vlc/770/.config/gtk-2.0/gtkfilechooser.ini
+/home/student/snap/vlc/770/.config/dconf/user
+/home/student/snap/vlc/770/.config/ibus/bus
+/home/student/snap/vlc/770/.config/gtk-3.0/bookmarks
+/home/student/snap/vlc/770/.config/gtk-3.0/settings.ini
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.wm.keybindings.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.thumbnail-cache.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.system.location.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.lockdown.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.notifications.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.session.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.default-applications.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.app-folders.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.enums.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.datetime.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.media-handling.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/10_gsettings-desktop-schemas.gschema.override
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.screensaver.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.search-providers.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gtk.Settings.ColorChooser.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.system.locale.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.interface.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.input-sources.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.mouse.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gtk.Settings.FileChooser.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.system.proxy.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.thumbnailers.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.wm.preferences.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.privacy.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.keyboard.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/10_libgtk-3-common.gschema.override
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.a11y.magnifier.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.peripherals.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.background.gschema.xml
+/home/student/snap/vlc/770/.local/share/glib-2.0/schemas/org.gnome.desktop.sound.gschema.xml
+/home/student/snap/vlc/770/.local/share/themes
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/COPYING
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/actions@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/actions
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/AUTHORS
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/places
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/places@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/index.theme
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/devices
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/apps
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/devices@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/status@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/status
+/home/student/snap/vlc/770/.local/share/icons/Humanity-Dark/apps@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/COPYING
+/home/student/snap/vlc/770/.local/share/icons/Humanity/actions@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/mimes
+/home/student/snap/vlc/770/.local/share/icons/Humanity/actions
+/home/student/snap/vlc/770/.local/share/icons/Humanity/AUTHORS
+/home/student/snap/vlc/770/.local/share/icons/Humanity/mimes@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/places
+/home/student/snap/vlc/770/.local/share/icons/Humanity/places@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/index.theme
+/home/student/snap/vlc/770/.local/share/icons/Humanity/CONTRIBUTORS
+/home/student/snap/vlc/770/.local/share/icons/Humanity/stock@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/devices
+/home/student/snap/vlc/770/.local/share/icons/Humanity/emblems
+/home/student/snap/vlc/770/.local/share/icons/Humanity/apps
+/home/student/snap/vlc/770/.local/share/icons/Humanity/emblems@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/categories@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/devices@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/status@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/categories
+/home/student/snap/vlc/770/.local/share/icons/Humanity/stock
+/home/student/snap/vlc/770/.local/share/icons/Humanity/animations@2
+/home/student/snap/vlc/770/.local/share/icons/Humanity/animations
+/home/student/snap/vlc/770/.local/share/icons/Humanity/status
+/home/student/snap/vlc/770/.local/share/icons/Humanity/apps@2
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/mimes
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/actions
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/places
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/index.theme
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/apps
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/categories
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/stock
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/animations
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-light/status
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/actions
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/places
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/mimetypes
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/index.theme
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/devices
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/applets
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/emblems
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/apps
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/categories
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/emotes
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/animations
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/preferences
+/home/student/snap/vlc/770/.local/share/icons/breeze-dark/status
+/home/student/snap/vlc/770/.local/share/icons/LoginIcons/index.theme
+/home/student/snap/vlc/770/.local/share/icons/LoginIcons/apps
+/home/student/snap/vlc/770/.local/share/icons/DMZ-Black/index.theme
+/home/student/snap/vlc/770/.local/share/icons/DMZ-Black/cursors
+/home/student/snap/vlc/770/.local/share/icons/DMZ-Black/cursor.theme
+/home/student/snap/vlc/770/.local/share/icons/DMZ-White/index.theme
+/home/student/snap/vlc/770/.local/share/icons/DMZ-White/cursors
+/home/student/snap/vlc/770/.local/share/icons/DMZ-White/cursor.theme
+/home/student/snap/vlc/770/.local/share/icons/breeze/actions
+/home/student/snap/vlc/770/.local/share/icons/breeze/places
+/home/student/snap/vlc/770/.local/share/icons/breeze/mimetypes
+/home/student/snap/vlc/770/.local/share/icons/breeze/index.theme
+/home/student/snap/vlc/770/.local/share/icons/breeze/devices
+/home/student/snap/vlc/770/.local/share/icons/breeze/applets
+/home/student/snap/vlc/770/.local/share/icons/breeze/emblems
+/home/student/snap/vlc/770/.local/share/icons/breeze/apps
+/home/student/snap/vlc/770/.local/share/icons/breeze/categories
+/home/student/snap/vlc/770/.local/share/icons/breeze/emotes
+/home/student/snap/vlc/770/.local/share/icons/breeze/animations
+/home/student/snap/vlc/770/.local/share/icons/breeze/preferences
+/home/student/snap/vlc/770/.local/share/icons/breeze/status
+/home/student/snap/vlc/770/.local/share/icons/hicolor/512x512
+/home/student/snap/vlc/770/.local/share/icons/hicolor/128x128
+/home/student/snap/vlc/770/.local/share/icons/hicolor/192x192
+/home/student/snap/vlc/770/.local/share/icons/hicolor/scalable
+/home/student/snap/vlc/770/.local/share/icons/hicolor/index.theme
+/home/student/snap/vlc/770/.local/share/icons/hicolor/72x72
+/home/student/snap/vlc/770/.local/share/icons/hicolor/16x16
+/home/student/snap/vlc/770/.local/share/icons/hicolor/256x256
+/home/student/snap/vlc/770/.local/share/icons/hicolor/48x48
+/home/student/snap/vlc/770/.local/share/icons/hicolor/96x96
+/home/student/snap/vlc/770/.local/share/icons/hicolor/22x22
+/home/student/snap/vlc/770/.local/share/icons/hicolor/24x24
+/home/student/snap/vlc/770/.local/share/icons/hicolor/64x64
+/home/student/snap/vlc/770/.local/share/icons/hicolor/symbolic
+/home/student/snap/vlc/770/.local/share/icons/hicolor/36x36
+/home/student/snap/vlc/770/.local/share/icons/hicolor/32x32
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/mimes
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/actions
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/places
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/index.theme
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/apps
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/categories
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/stock
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/animations
+/home/student/snap/vlc/770/.local/share/icons/ubuntu-mono-dark/status
+/home/student/.mozilla/firefox/0avjfhxr.default/lock
+student@T41:~$ pwd
+/home/student
+student@T41:~$ cd ajce
+student@T41:~/ajce$ cd sd
+student@T41:~/ajce/sd$ tar cvf file.tar *.c
+tar: *.c: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+student@T41:~/ajce/sd$ tar cvf file.tar *.sd
+tar: *.sd: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+student@T41:~/ajce/sd$ ls
+ 25.txt   b.txt         copy     file.tar   'head and tail combine.txt'   search2.txt   state2.txt  'Untitled Document 1'
+ a.txt    capital.txt   f1.txt   fruit.txt   null                         search.txt    state.txt
+student@T41:~/ajce/sd$ tar -czvf f123.tar.gz t
+tar: t: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+student@T41:~/ajce/sd$ ls
+ 25.txt   b.txt         copy          f1.txt     fruit.txt                    null          search.txt   state.txt
+ a.txt    capital.txt   f123.tar.gz   file.tar  'head and tail combine.txt'   search2.txt   state2.txt  'Untitled Document 1'
+student@T41:~/ajce/sd$ tar -czvf f123.tar.gz sd
+tar: sd: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+student@T41:~/ajce/sd$ cd ..
+student@T41:~/ajce$ tar -czvf f123.tar.gz sd
+sd/
+sd/search.txt
+sd/file.tar
+sd/fruit.txt
+sd/f123.tar.gz
+sd/state.txt
+sd/a.txt
+sd/null/
+sd/copy/
+sd/copy/grep.txt
+sd/capital.txt
+sd/state2.txt
+sd/b.txt
+sd/head and tail combine.txt
+sd/Untitled Document 1
+sd/25.txt
+sd/f1.txt
+sd/search2.txt
+student@T41:~/ajce$ tar -xzvf f123.tar.gz sd
+sd/
+sd/search.txt
+sd/file.tar
+sd/fruit.txt
+sd/f123.tar.gz
+sd/state.txt
+sd/a.txt
+sd/null/
+sd/copy/
+sd/copy/grep.txt
+sd/capital.txt
+sd/state2.txt
+sd/b.txt
+sd/head and tail combine.txt
+sd/Untitled Document 1
+sd/25.txt
+sd/f1.txt
+sd/search2.txt
+student@T41:~/ajce$ tar -xzvf f123.tar.gz 
+sd/
+sd/search.txt
+sd/file.tar
+sd/fruit.txt
+sd/f123.tar.gz
+sd/state.txt
+sd/a.txt
+sd/null/
+sd/copy/
+sd/copy/grep.txt
+sd/capital.txt
+sd/state2.txt
+sd/b.txt
+sd/head and tail combine.txt
+sd/Untitled Document 1
+sd/25.txt
+sd/f1.txt
+sd/search2.txt
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ tar -xzvf f123.tar.gz
+tar (child): f123.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+student@T41:~/ajce$ tar -xzvf f123.tar.gz
+tar (child): f123.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+student@T41:~/ajce$ pwd
+/home/student/ajce
+student@T41:~/ajce$ cd 123
+student@T41:~/ajce/123$ tar -xzvf f123.tar.gz
+sd/
+sd/search.txt
+sd/file.tar
+sd/fruit.txt
+sd/f123.tar.gz
+sd/state.txt
+sd/a.txt
+sd/null/
+sd/copy/
+sd/copy/grep.txt
+sd/capital.txt
+sd/state2.txt
+sd/b.txt
+sd/head and tail combine.txt
+sd/Untitled Document 1
+sd/25.txt
+sd/f1.txt
+sd/search2.txt
+student@T41:~/ajce/123$ 
+
